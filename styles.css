@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Indica que le body tome el 100% de la pantalla, agrego una imagen como fondo y se le agrega transparencia con linear*/
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(#00000069), url(Imagenes/Fondo.jpg);
+}
+
+/*  */
+.header{
+    width: 100%;
+    background-color: lightcoral;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 6rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+
+
+
+
+
+section{
+    font-size: 0;
+}
+
+/* Lamborghini Huracan producto 1 */
+.producto1{
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    margin-left: 5rem;
+    text-align: center;
+    font-size: 16px;
+    border: solid 5px rgba(240, 128, 128, 0.637);
+    border-radius: 20px;
+    
+}
+.producto1 .imagen{
+    width: 35vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+    
+
+}
+
+.producto1 h1{
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.producto1 p{
+    width: 80%;
+    height: 10vh;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    
+}
+
+/* Lamborguini Hurus S Producto 2 */
+.producto2{
+    width: 40%;
+    height: 40%;
+    max-height: 50%;
+    display: inline-block;
+    margin-left: 7rem;
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 16px; 
+     border: solid 5px rgba(240, 128, 128, 0.637);
+    border-radius: 20px;
+}
+.producto2 .imagen2{
+    width: 35vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+
+.producto2 h1{
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.producto2 p{
+    width: 80%;
+    height: 10vh;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.producto3{
+    width: 40%;
+    height: 40%;
+    max-height: 50%;
+    display: inline-block;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 16px;
+    border: solid 5px rgba(240, 128, 128, 0.637);
+    border-radius: 20px;
+}
+.producto3 .imagen3{
+    width: 35vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+
+.producto3 h1{
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.producto3 p{
+    width: 80%;
+    height: 10vh;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.producto4{
+    width: 40%;
+    height: 40%;
+    max-height: 80%;
+    display: inline-block;
+    margin-top: 6rem;
+    margin-left: 7rem;
+    text-align: center;
+    font-size: 16px;
+    border: solid 5px rgba(240, 128, 128, 0.637);
+    border-radius: 20px;
+}
+.producto4 .imagen4{
+    width: 35vw;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+
+.producto4 h1{
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.producto4 p{
+    width: 80%;
+    height: 10vh;
+    overflow: auto;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+
+}
+
+
+
+@media (max-width: 992px){
+    .producto1,
+    .producto3{
+        margin-left: 4rem;
+    }
+    .producto2,
+    .producto4{
+        margin-left: 4rem;
+    }
+
+    .producto1 h1{
+        white-space: pre-line;
+        
+    }
+    .producto3 h1{
+        white-space: pre-line;
+    }
+    .producto4 h1{
+     white-space: pre-line;
+     
+    }
+
+    .producto2 h1{
+        white-space: pre-line;
+
+    }
+
+    ul{
+        margin-left: 7rem;
+    }
+
+    .producto1 h1,
+    .producto2 h1,
+    .producto3 h1,
+    .producto4 h1{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .producto1,
+    .producto3{
+        margin-left: 2.5rem;
+    }
+    .producto2,
+    .producto4{
+        margin-left: 3rem;
+    }
+
+    ul li{
+        display: inline-block;
+        margin: 0px;
+        margin-right: 2rem;
+        margin-top: 0.7rem;
+    }
+
+    ul{
+        margin-left: 2.5rem;
+    }
+    
+    .header{
+        height: 3rem;
+    }
+
+    .producto1 h1,
+    .producto2 h1,
+    .producto3 h1,
+    .producto4 h1{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px){
+    .producto1,
+    .producto2,
+    .producto3,
+    .producto4{
+        width: 60%;
+        margin: auto;
+        margin-top: 1.8rem;
+        margin-bottom: 2rem;
+        display: block;
+        
+    }
+
+    .producto1 .imagen,
+    .producto2 .imagen2,
+    .producto3 .imagen3,
+    .producto4 .imagen4{
+        width: 90%;
+    }
+}
+
