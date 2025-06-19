@@ -5,7 +5,12 @@
     font-family: sans-serif;
 }
 
+:root {
+    --alto: 100px;
+}
 /* Indica que le body tome el 100% de la pantalla, agrego una imagen como fondo y se le agrega transparencia con linear*/
+
+
 body{
     width: 100vw; /* Regla que toma el 100% del viewport a lo ancho*/
     height: 100vh; /* Regla que toma el 100% del viewport a lo largo*/
@@ -16,7 +21,14 @@ body{
 /* Caja superior que contiene el menu de navegación*/
 .header{
     width: 100%; /*Regla que toma a lo ancho el 100% de las dimensiones de la web */
+    height: var(--alto);
     background-color: lightcoral; /* Color de fondo */
+    position: fixed;
+    top: 0;
+}
+
+main{
+    margin-top: calc(var(--alto)  * 2);
 }
 
 /* Reglas que modifican el menu de navegacion */
@@ -219,7 +231,6 @@ section{
 }
 
 
-
 @media (max-width: 992px){
     .producto1,
     .producto3{
@@ -312,5 +323,6 @@ section{
     .producto4 .imagen4{
         width: 90%;
     }
+
 }
 
